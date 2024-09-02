@@ -4,37 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <title>Portafolio</title>
 </head>
 <body>
     <header class="header">
-        <a href="">Home</a>
-        <a href="">About Me</a>
+        <a href="#home" class="logo">Daniel <span>Román</span></a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+        
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#education">Education</a>
+            <a href="#about me">About me</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
 
-    <main class="main">
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>!Hola¡ Soy <span>Daniel</span></h1>    
+            <h3 class="text-animation">Soy un</h3>
+            <p>Ingeniero en Software egresado desde el 2023, soy un apasionado por la programación y
+                el análisis de datos en proceso de especialización como Data Scientist. Cuento con experiencia laboral
+                en el sector petrolero, con una sólida formación en Python, Power Bi, SQL y Excel. En busca de oportunidades
+                que me permitan contribuir de manera útil y desarrollar de manera profesional mis habilidades en el campo
+                de la ciencia de datos realizando proyectos desafiantes.
+            </p>
 
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/daniel-román-villegas/"><i class='bx bxl-linkedin' ></i>LinkedIn</a>
+                <a href="https://github.com/DanielRomanVillegas"><i class='bx bxl-github' ></i>GitHub</a>
+                <a href=""><i class='bx bx-spreadsheet' ></i>CV - Daniel Román Villegas</a>
+                <a href=""><i class='bx bx-spreadsheet' ></i>Cover Letter</a>
+            </div>
 
-        <h1>El titulo de mi CV</h1>
-
-        <p>!Hola¡ Soy Daniel un Ingeniero en Software egresado desde el 2023, soy un apasionado por la programación y
-            el análisis de datos en proceso de especialización como Data Scientist. Cuento con experiencia laboral
-            en el sector petrolero, con una sólida formación en Python, Power Bi, SQL y Excel. En busca de oportunidades
-            que me permitan contribuir de manera útil y desarrollar de manera profesional mis habilidades en el campo
-            de la ciencia de datos realizando proyectos desafiantes.
-        </p>
-        
-        <div class="social__media">
-            <a href="https://www.linkedin.com/in/daniel-román-villegas/">LinkedIn</a>
-            <a href="https://github.com/DanielRomanVillegas">GitHub</a>
-            <a href="">CV - Daniel Román Villegas</a>
-            <a href="">Cover Letter</a>
+            <div class="btn-group">
+                <a href="#" class="btn">Hire</a>
+                <a href="#contact" class="btn">Contact</a>
+            </div>
         </div>
 
-    </main>
+            <div class="home-img">
+                <img src="profile_pic.jpeg" alt="Daniel Román Villegas">
+            </div>
+
+    </section>
     
     <footer class="footer">
         <h3>Desarrollado por Daniel </h3>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
